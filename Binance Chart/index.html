@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binance Live Chart</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="chart-container p-4">
+                    <h1 class="text-center mb-4">Binance Live Chart</h1>
+                    <div class="row mb-3">
+                        <div class="col-sm-6 mb-2 mb-sm-0">
+                            <select id="symbolSelect" class="form-select">
+                                <option value="ETHUSDT">ETH/USDT</option>
+                                <option value="BNBUSDT">BNB/USDT</option>
+                                <option value="DOTUSDT">DOT/USDT</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-6">
+                            <select id="intervalSelect" class="form-select">
+                                <option value="1m">1 minute</option>
+                                <option value="3m">3 minutes</option>
+                                <option value="5m">5 minutes</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="chart"></div>
+                    <div id="currentPrice" class="current-price text-center mt-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
